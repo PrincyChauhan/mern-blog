@@ -32,8 +32,11 @@ export default function Header() {
           <FaMoon />
         </Button>
         <Link to="/sign-in">
-          <Button gradientDuoTone="purpleToBlue"></Button>
+          <Button gradientDuoTone="purpleToBlue">
+            Sign In
+          </Button>
         </Link>
+        <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
         <Navbar.Link active={path === "/"} as={"div"}>
@@ -49,3 +52,4 @@ export default function Header() {
     </Navbar>
   );
 }
+0
